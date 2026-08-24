@@ -1,0 +1,41 @@
+{
+  "name": "genpark-specialty-coffee-roast-on-order-subscription-profiler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - DTC specialty single-estate coffee roast-on-order subscription engine with SCA cupping flavor profiler and custom grind optimization.",
+  "author": "genpark",
+  "category": "dtc-food",
+  "tags": [
+    "specialty-coffee",
+    "roast-on-order",
+    "sca-cupping",
+    "coffee-subscription",
+    "blue-tokai"
+  ],
+  "inputs": {
+    "brew_method": {
+      "type": "string"
+    },
+    "flavor_profile": {
+      "type": "string"
+    },
+    "subscription_freq_weeks": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "batch_roast_id": {
+      "type": "string"
+    },
+    "estate_origin": {
+      "type": "string"
+    },
+    "sca_cupping_score": {
+      "type": "number"
+    },
+    "roast_to_door_freshness_hours": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
